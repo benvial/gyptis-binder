@@ -1,0 +1,8 @@
+name: gyptis-binder
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - gyptis=1.2.0
+  - matplotlib
+  - ipykernel

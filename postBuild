@@ -1,0 +1,5 @@
+#!/bin/bash
+# Run the notebook once at image build time so the FEniCS JIT cache
+# (~/.cache/fenics) ships with the image and live sessions skip form compilation.
+set -euo pipefail
+jupyter nbconvert --to notebook --execute gyptis.ipynb --output /tmp/warmup.ipynb
