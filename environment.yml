@@ -6,3 +6,4 @@ dependencies:
   - gyptis=1.2.0
   - matplotlib
   - ipykernel
+  - setuptools<81  # gyptis still imports pkg_resources, which warns from setuptools 81
