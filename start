@@ -1,0 +1,4 @@
+#!/bin/bash
+# Point the running kernel at the JIT cache warmed by postBuild.
+export DIJITSO_CACHE_DIR="$HOME/.cache/dijitso"
+exec "$@"
