@@ -9,6 +9,6 @@ environment, so the Binder image stays cached between visits.
 
 - `environment.yml`: gyptis from conda-forge, pinned.
 - `postBuild`: executes `gyptis.ipynb` once at build time to warm the FEniCS JIT cache.
-- `start`: points live kernels at that cache.
+- `start`: points live kernels at that cache and matches BLAS/OpenMP threads to the CPU quota.
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/benvial/gyptis-binder/main?filepath=gyptis.ipynb)
