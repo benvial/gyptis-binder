@@ -6,4 +6,4 @@ dependencies:
   - gyptis=1.2.0
   - matplotlib
   - ipykernel
-  - setuptools<81  # gyptis still imports pkg_resources, which warns from setuptools 81
+  - setuptools>=82  # no pkg_resources: gyptis then uses its own shim instead of a deprecated, warning import
